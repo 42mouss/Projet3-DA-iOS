@@ -14,6 +14,9 @@
 		B5843EB81F7A85DE00C2C910 /* Dwarf.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5843EB71F7A85DE00C2C910 /* Dwarf.swift */; };
 		B5843EBA1F7A86EA00C2C910 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5843EB91F7A86EA00C2C910 /* Character.swift */; };
 		B5843EC11F7A9D9400C2C910 /* Weapon.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5843EC01F7A9D9400C2C910 /* Weapon.swift */; };
+		B5843EC31F7AE50400C2C910 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5843EC21F7AE50400C2C910 /* Game.swift */; };
+		B5843EC51F7AE9D000C2C910 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5843EC41F7AE9D000C2C910 /* Player.swift */; };
+		B5843EC71F7AF1BC00C2C910 /* Statics.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5843EC61F7AF1BC00C2C910 /* Statics.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -37,6 +40,9 @@
 		B5843EB71F7A85DE00C2C910 /* Dwarf.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dwarf.swift; sourceTree = "<group>"; };
 		B5843EB91F7A86EA00C2C910 /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		B5843EC01F7A9D9400C2C910 /* Weapon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weapon.swift; sourceTree = "<group>"; };
+		B5843EC21F7AE50400C2C910 /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		B5843EC41F7AE9D000C2C910 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		B5843EC61F7AF1BC00C2C910 /* Statics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Statics.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +76,9 @@
 			isa = PBXGroup;
 			children = (
 				B5843EAA1F7A856900C2C910 /* main.swift */,
+				B5843EC21F7AE50400C2C910 /* Game.swift */,
+				B5843EC41F7AE9D000C2C910 /* Player.swift */,
+				B5843EC61F7AF1BC00C2C910 /* Statics.swift */,
 				B5843EBB1F7A86F400C2C910 /* Characters */,
 				B5843EC01F7A9D9400C2C910 /* Weapon.swift */,
 			);
@@ -154,6 +163,9 @@
 				B5843EBA1F7A86EA00C2C910 /* Character.swift in Sources */,
 				B5843EAB1F7A856900C2C910 /* main.swift in Sources */,
 				B5843EB21F7A85AB00C2C910 /* Fighter.swift in Sources */,
+				B5843EC71F7AF1BC00C2C910 /* Statics.swift in Sources */,
+				B5843EC51F7AE9D000C2C910 /* Player.swift in Sources */,
+				B5843EC31F7AE50400C2C910 /* Game.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

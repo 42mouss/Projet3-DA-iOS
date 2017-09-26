@@ -1,5 +1,5 @@
 //
-//  main.swift
+//  Game.swift
 //  Projet 3 - DA iOS
 //
 //  Created by Mustapha Gherras on 26/09/2017.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-// MARK: - Instantiate the game
-let game = Game()
-//game.newGame()
-
+// MARK: - Game Class Definition
+class Game {
+    
+}
