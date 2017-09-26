@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		B5843EAB1F7A856900C2C910 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5843EAA1F7A856900C2C910 /* main.swift */; };
+		B5843EB21F7A85AB00C2C910 /* Fighter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5843EB11F7A85AB00C2C910 /* Fighter.swift */; };
+		B5843EB41F7A85C200C2C910 /* Mage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5843EB31F7A85C200C2C910 /* Mage.swift */; };
+		B5843EB61F7A85D600C2C910 /* Colossus.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5843EB51F7A85D600C2C910 /* Colossus.swift */; };
+		B5843EB81F7A85DE00C2C910 /* Dwarf.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5843EB71F7A85DE00C2C910 /* Dwarf.swift */; };
+		B5843EBA1F7A86EA00C2C910 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5843EB91F7A86EA00C2C910 /* Character.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +30,11 @@
 /* Begin PBXFileReference section */
 		B5843EA71F7A856900C2C910 /* Projet 3 - DA iOS */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Projet 3 - DA iOS"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5843EAA1F7A856900C2C910 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		B5843EB11F7A85AB00C2C910 /* Fighter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fighter.swift; sourceTree = "<group>"; };
+		B5843EB31F7A85C200C2C910 /* Mage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mage.swift; sourceTree = "<group>"; };
+		B5843EB51F7A85D600C2C910 /* Colossus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colossus.swift; sourceTree = "<group>"; };
+		B5843EB71F7A85DE00C2C910 /* Dwarf.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dwarf.swift; sourceTree = "<group>"; };
+		B5843EB91F7A86EA00C2C910 /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +68,21 @@
 			isa = PBXGroup;
 			children = (
 				B5843EAA1F7A856900C2C910 /* main.swift */,
+				B5843EBB1F7A86F400C2C910 /* Characters */,
 			);
 			path = "Projet 3 - DA iOS";
+			sourceTree = "<group>";
+		};
+		B5843EBB1F7A86F400C2C910 /* Characters */ = {
+			isa = PBXGroup;
+			children = (
+				B5843EB91F7A86EA00C2C910 /* Character.swift */,
+				B5843EB11F7A85AB00C2C910 /* Fighter.swift */,
+				B5843EB31F7A85C200C2C910 /* Mage.swift */,
+				B5843EB51F7A85D600C2C910 /* Colossus.swift */,
+				B5843EB71F7A85DE00C2C910 /* Dwarf.swift */,
+			);
+			name = Characters;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -121,7 +144,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5843EB61F7A85D600C2C910 /* Colossus.swift in Sources */,
+				B5843EB41F7A85C200C2C910 /* Mage.swift in Sources */,
+				B5843EB81F7A85DE00C2C910 /* Dwarf.swift in Sources */,
+				B5843EBA1F7A86EA00C2C910 /* Character.swift in Sources */,
 				B5843EAB1F7A856900C2C910 /* main.swift in Sources */,
+				B5843EB21F7A85AB00C2C910 /* Fighter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
