@@ -16,6 +16,6 @@ class Mage: Character {
         super.init()
         self.name = "Mage"
         self.lifePoints = 70
-        self.damages = 10
+        self.weapon = Weapon(type: .heal, damage: 0, heal: 40)
     }
 }

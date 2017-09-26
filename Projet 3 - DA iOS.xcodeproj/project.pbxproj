@@ -13,6 +13,7 @@
 		B5843EB61F7A85D600C2C910 /* Colossus.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5843EB51F7A85D600C2C910 /* Colossus.swift */; };
 		B5843EB81F7A85DE00C2C910 /* Dwarf.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5843EB71F7A85DE00C2C910 /* Dwarf.swift */; };
 		B5843EBA1F7A86EA00C2C910 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5843EB91F7A86EA00C2C910 /* Character.swift */; };
+		B5843EC11F7A9D9400C2C910 /* Weapon.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5843EC01F7A9D9400C2C910 /* Weapon.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -35,6 +36,7 @@
 		B5843EB51F7A85D600C2C910 /* Colossus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colossus.swift; sourceTree = "<group>"; };
 		B5843EB71F7A85DE00C2C910 /* Dwarf.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dwarf.swift; sourceTree = "<group>"; };
 		B5843EB91F7A86EA00C2C910 /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		B5843EC01F7A9D9400C2C910 /* Weapon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weapon.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 			children = (
 				B5843EAA1F7A856900C2C910 /* main.swift */,
 				B5843EBB1F7A86F400C2C910 /* Characters */,
+				B5843EC01F7A9D9400C2C910 /* Weapon.swift */,
 			);
 			path = "Projet 3 - DA iOS";
 			sourceTree = "<group>";
@@ -147,6 +150,7 @@
 				B5843EB61F7A85D600C2C910 /* Colossus.swift in Sources */,
 				B5843EB41F7A85C200C2C910 /* Mage.swift in Sources */,
 				B5843EB81F7A85DE00C2C910 /* Dwarf.swift in Sources */,
+				B5843EC11F7A9D9400C2C910 /* Weapon.swift in Sources */,
 				B5843EBA1F7A86EA00C2C910 /* Character.swift in Sources */,
 				B5843EAB1F7A856900C2C910 /* main.swift in Sources */,
 				B5843EB21F7A85AB00C2C910 /* Fighter.swift in Sources */,

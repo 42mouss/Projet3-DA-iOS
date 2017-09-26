@@ -16,6 +16,6 @@ class Fighter: Character {
         super.init()
         self.name = "Fighter"
         self.lifePoints = 100
-        self.damages = 10
+        self.weapon = Weapon(type: .damage, damage: 10, heal: 0)
     }
 }

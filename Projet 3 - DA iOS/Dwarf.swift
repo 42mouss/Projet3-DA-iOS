@@ -15,7 +15,7 @@ class Dwarf: Character {
     override init() {
         super.init()
         self.name = "Dwarf"
-        self.lifePoints = 100
-        self.damages = 10
+        self.lifePoints = 70
+        self.weapon = Weapon(type: .damage, damage: 50, heal: 0)
     }
 }

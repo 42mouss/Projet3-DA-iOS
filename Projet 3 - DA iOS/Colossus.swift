@@ -15,7 +15,7 @@ class Colossus: Character {
     override init() {
         super.init()
         self.name = "Colossus"
-        self.lifePoints = 100
-        self.damages = 10
+        self.lifePoints = 300
+        self.weapon = Weapon(type: .damage, damage: 5, heal: 0)
     }
 }
