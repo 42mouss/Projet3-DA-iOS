@@ -10,5 +10,7 @@ import Foundation
 
 // MARK: - Instantiate the game
 let game = Game()
+game.addPlayer()
+
 //game.newGame()
 

@@ -10,9 +10,12 @@ import Foundation
 
 // MARK: - Statics Class Definition
 class Statics {
-    // MARK: - Number of character per players, of turns
-    let characters = 3
-    var numberOfTurns = 0
+    // MARK: - Number of players, of character per players, of turns
+    static var existingNamesPlayers = [String]()
+    static var numberOfPlayers = 0 ..< 2
+    static var players = [Player?](repeating: nil, count: 2)
+    static let characters = 3
+    static var numberOfTurns = 0
     
     
 }
