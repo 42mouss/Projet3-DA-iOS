@@ -17,6 +17,7 @@
 		B5843EC31F7AE50400C2C910 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5843EC21F7AE50400C2C910 /* Game.swift */; };
 		B5843EC51F7AE9D000C2C910 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5843EC41F7AE9D000C2C910 /* Player.swift */; };
 		B5843EC71F7AF1BC00C2C910 /* Statics.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5843EC61F7AF1BC00C2C910 /* Statics.swift */; };
+		B5843ECB1F7D824E00C2C910 /* GlobalPrinter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5843ECA1F7D824E00C2C910 /* GlobalPrinter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -43,6 +44,7 @@
 		B5843EC21F7AE50400C2C910 /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		B5843EC41F7AE9D000C2C910 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		B5843EC61F7AF1BC00C2C910 /* Statics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Statics.swift; sourceTree = "<group>"; };
+		B5843ECA1F7D824E00C2C910 /* GlobalPrinter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalPrinter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 				B5843EC21F7AE50400C2C910 /* Game.swift */,
 				B5843EC41F7AE9D000C2C910 /* Player.swift */,
 				B5843EC61F7AF1BC00C2C910 /* Statics.swift */,
+				B5843ECA1F7D824E00C2C910 /* GlobalPrinter.swift */,
 				B5843EBB1F7A86F400C2C910 /* Characters */,
 				B5843EC01F7A9D9400C2C910 /* Weapon.swift */,
 			);
@@ -156,6 +159,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5843ECB1F7D824E00C2C910 /* GlobalPrinter.swift in Sources */,
 				B5843EB61F7A85D600C2C910 /* Colossus.swift in Sources */,
 				B5843EB41F7A85C200C2C910 /* Mage.swift in Sources */,
 				B5843EB81F7A85DE00C2C910 /* Dwarf.swift in Sources */,

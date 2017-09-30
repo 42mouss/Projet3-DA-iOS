@@ -13,6 +13,7 @@ import Foundation
 class Character {
     // MARK: - Name, Life points, Damages Definitions
     var name: String
+    var nammed: String
     var lifePoints: Int
     var weapon: Weapon
     
@@ -20,6 +21,7 @@ class Character {
     // MARK: - Init values
     init() {
         self.name = "Character"
+        self.nammed = "Unammed"
         self.lifePoints = 100
         self.weapon = Weapon(type: .damage, damage: 100, heal: 0)
     }
