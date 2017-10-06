@@ -19,8 +19,9 @@ class Game {
     public func newGame() {
         printer.presentation()
         addPlayer()
-        addCharacterTeam(player: Statics.players[0]!)
-        addCharacterTeam(player: Statics.players[1]!)
+        for i in Statics.numberOfPlayers {
+            addCharacterTeam(player: Statics.players[i]!, index: 0)
+        }
         
     }
     
@@ -34,20 +35,21 @@ class Game {
                     Statics.existingNamesPlayers.append(reader)
                 } else {
                     printer.nameThePlayersDifferently()
-                    Statics.existingNamesPlayers.removeAll(keepingCapacity: true)
+                    Statics.existingNamesPlayers.removeAll(keepingCapacity: false)
                     addPlayer()
-                    // BUG TO FIX
                 }
             }
         }
     }
     
     // MARK: - Adding Characters to Team, Repeat if wrong entry, Printing the champ you've picked
-    private func addCharacterTeam(player: Player) {
+    private func addCharacterTeam(player: Player, index: Int) {
+        var i = index
         
-        for i in Statics.numberOfCharacterPerPlayer {
+        while i < Statics.numberOfCharacterPerPlayer {
             printer.addingCharacter(player: player)
             if let reader = readLine() {
+                print("i is \(i)")
                 switch reader {
                 case "1":
                     player.characters.append(Fighter())
@@ -58,18 +60,19 @@ class Game {
                 case "4":
                     player.characters.append(Dwarf())
                 default:
-                  printer.validNumber()
+                    printer.validNumber()
+                    addCharacterTeam(player: player, index: i)
                 }
             }
             addCharacterName(player: player, index: i)
             printer.youHaveSelected(player: player, index: i)
-            
+            i += 1
         }
-        //print("You've selected \(Player.characters[self.characters.count].name)")
     }
     
     // MARK: - Adding Character Name same checking of adding a player
     private func addCharacterName(player: Player, index: Int) {
+        print(index)
         printer.validNameForCharacter()
         if let reader = readLine() {
             if reader.characters.count > 0 && !(Statics.existingNamesCharacter.contains(reader)) {

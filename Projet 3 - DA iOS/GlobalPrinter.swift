@@ -16,12 +16,12 @@ class Printer {
         print("Welcome to the DA iOS 3rd Project")
         print("Name up 2 players teams")
         print("Compose your teamcomp")
-        print("By choosing the number printed on the list\n")
+        print("By choosing the number printed on the list")
     }
     
     // MARK: Name the player print
     public func nameThePlayer(numberOfPlayers: Int) {
-        print("Name the Player \(numberOfPlayers + 1)")
+        print("\nName the Player \(numberOfPlayers + 1)")
     }
     
     // MARK: Name the players differently print
@@ -35,7 +35,7 @@ class Printer {
         print("1 - Fighter: Life(100) Damage(10)")
         print("2 - Mage: Life(70) Heal(40)")
         print("3 - Colossus: Life(300) Damage(5)")
-        print("4 - Dwarf: Life(70) Damage(50)")
+        print("4 - Dwarf: Life(70) Damage(50)", terminator: "\n")
     }
     
     // MARK: - Please enter a valid number print
