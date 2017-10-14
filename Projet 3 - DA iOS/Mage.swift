@@ -12,10 +12,7 @@ import Foundation
 class Mage: Character {
     
     // MARK: - Init Mage stats
-    override init() {
-        super.init()
-        self.name = "Mage"
-        self.lifePoints = 70
-        self.weapon = Weapon(type: .heal, damage: 0, heal: 40)
-    }
+    init() {
+        super.init(name: "Fighter", nammed: "", lifePoints: 100, weapon: Weapon(type: .heal, damage: 0, heal: 40))
+        }
 }

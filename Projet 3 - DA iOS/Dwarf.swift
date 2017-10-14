@@ -12,10 +12,7 @@ import Foundation
 class Dwarf: Character {
     
     // MARK: - Init Dwarf stats
-    override init() {
-        super.init()
-        self.name = "Dwarf"
-        self.lifePoints = 70
-        self.weapon = Weapon(type: .damage, damage: 50, heal: 0)
+    init() {
+        super.init(name: "Dwarf", nammed: "", lifePoints: 70, weapon: Weapon(type: .damage, damage: 50, heal: 0))
     }
 }

@@ -19,11 +19,11 @@ class Character {
     
     
     // MARK: - Init values
-    init() {
-        self.name = "Character"
-        self.nammed = "Unammed"
-        self.lifePoints = 100
-        self.weapon = Weapon(type: .damage, damage: 100, heal: 0)
+    init(name: String, nammed: String, lifePoints: Int, weapon: Weapon) {
+        self.name = name
+        self.nammed = nammed
+        self.lifePoints = lifePoints
+        self.weapon = weapon
     }
 
     // MARK: - Description of Character stats

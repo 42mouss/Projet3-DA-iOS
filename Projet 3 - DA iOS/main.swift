@@ -8,9 +8,5 @@
 
 import Foundation
 
-// MARK: - Instantiate the game
-let game = Game()
-game.newGame()
-
-//game.newGame()
+Game.instance.newGame()
 

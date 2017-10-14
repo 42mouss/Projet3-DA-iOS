@@ -12,10 +12,7 @@ import Foundation
 class Colossus: Character {
     
     // MARK: - Init Colossus stats
-    override init() {
-        super.init()
-        self.name = "Colossus"
-        self.lifePoints = 300
-        self.weapon = Weapon(type: .damage, damage: 5, heal: 0)
+    init() {
+        super.init(name: "Colossus", nammed: "", lifePoints: 200, weapon: Weapon(type: .damage, damage: 5, heal: 0))
     }
 }

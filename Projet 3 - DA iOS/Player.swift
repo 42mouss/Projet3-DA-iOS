@@ -15,11 +15,20 @@ class Player {
     var characters: [Character]
     var isAlive: Bool
     
+    // MARK: - Helper for prints
+    let printer = Printer()
+    
     
     // MARK: - Player Class Init, only need to get the name
     init(name: String) {
         self.name = name
         self.characters = []
         self.isAlive = true
+    }
+    
+    public func selectCharacter() -> Character {
+        
+        printer.fightPresentation(name: self.name)
+        return
     }
 }

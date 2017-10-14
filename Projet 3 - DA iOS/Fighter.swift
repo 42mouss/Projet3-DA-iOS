@@ -12,10 +12,8 @@ import Foundation
 class Fighter: Character {
 
     // MARK: - Init Fighter stats
-    override init() {
-        super.init()
-        self.name = "Fighter"
-        self.lifePoints = 100
-        self.weapon = Weapon(type: .damage, damage: 10, heal: 0)
+    init() {
+        super.init(name: "Fighter", nammed: "", lifePoints: 100, weapon: Weapon(type: .damage, damage: 10, heal: 0))
+  
     }
 }

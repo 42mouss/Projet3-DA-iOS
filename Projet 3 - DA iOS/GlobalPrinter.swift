@@ -60,4 +60,8 @@ class Printer {
     }
     
     
+    // MARK: - Fight Presentation print
+    public func fightPresentation(name: String) {
+        print("\nOK \(name), lets fight, select a champion")
+    }
 }

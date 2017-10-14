@@ -13,16 +13,24 @@ class Game {
     
     // MARK: - Helper for prints
     let printer = Printer()
-    
+    static let instance = Game()
     
     // MARK: - Method to launch the global game
     public func newGame() {
+        var currentPlayer = Statics.players[0]
+        var currentAdv = Statics.players[1]
+        
         printer.presentation()
         addPlayer()
         for i in Statics.numberOfPlayers {
             addCharacterTeam(player: Statics.players[i]!, index: 0)
         }
-        
+        if let currentPlayer = currentPlayer {
+            while currentPlayer.isAlive {
+                let selectedCharacter = currentPlayer.selectCharacter()
+                let selectedTarget = currentPlayer.selectTarget(selectedCharacter, currentAdv)
+            }
+        }
     }
     
     // MARK: - Adding Player
@@ -49,7 +57,6 @@ class Game {
         while i < Statics.numberOfCharacterPerPlayer {
             printer.addingCharacter(player: player)
             if let reader = readLine() {
-                print("i is \(i)")
                 switch reader {
                 case "1":
                     player.characters.append(Fighter())
@@ -72,7 +79,6 @@ class Game {
     
     // MARK: - Adding Character Name same checking of adding a player
     private func addCharacterName(player: Player, index: Int) {
-        print(index)
         printer.validNameForCharacter()
         if let reader = readLine() {
             if reader.characters.count > 0 && !(Statics.existingNamesCharacter.contains(reader)) {
@@ -83,5 +89,10 @@ class Game {
                 addCharacterName(player: player, index: index)
             }
         }
+    }
+    
+    // MARK: - Handling fights
+    private func fightHandler() {
+        //
     }
 }
