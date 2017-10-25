@@ -17,6 +17,6 @@ class Mage: Character {
     }
     
     override func description() {
-        print("Mage with Heal(\(self.weapon.healValue))")
+        printer.descriptionMage(self)
     }
 }

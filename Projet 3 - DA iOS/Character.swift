@@ -27,15 +27,16 @@ class Character {
 
     // MARK: - Description of Character stats
     public func description() -> Void {
-        print("\(self.name): lifePoints(\(self.lifePoints))")
-        print("Damages(\(self.weapon))")
+        printer.description(self)
     }
     
+    // MARK: - Do Action Method
     public func doAction(target: Character) {
-        print("\(self.name) attacks \(target.name)")
+        printer.doAction(self)
         target.receveDamage(damage: self.weapon.damageValue)
     }
     
+    // MARK: - Receve Dmg Method
     public func receveDamage(damage: Int) {
         let oldLife = self.lifePoints
         let oldArmor = self.armor
@@ -43,30 +44,30 @@ class Character {
         if self.armor < damage {
             self.lifePoints -= damage - self.armor
             if self.lifePoints < 0 { self.lifePoints = 0 }
-            print("\(self.name) lost \(oldLife - self.lifePoints) life points")
+            printer.lostLifePoints(self, oldLife)
         }
         
         self.armor -= damage
         if self.armor < 0 { self.armor = 0 }
         
         if oldArmor > self.armor {
-            print("\(self.name) lost \(oldArmor - self.armor) armor points")
+            printer.lostArmorPoint(self, oldArmor)
         }
     }
     
-    // Function to update the life value when the character receve life from box or mage
+    // Update the life value when the character receve life from box
     public func receveLife(life: Int) {
         let oldLife = self.lifePoints
         
         self.lifePoints += lifePoints
-        print("\(self.name) wons \(self.lifePoints - oldLife) life points")
+        printer.wonLifePoint(self, oldLife)
     }
     
-    // Function to update the armor value when the character receve armor from box
+    // Update the armor value when the character receve armor from box
     public func receveArmor(armor: Int) {
         let oldArmor = self.armor
         
         self.armor += armor
-        print("\(self.name) wons \(self.armor - oldArmor) armor points")
+        printer.wonArmorPoint(self, oldArmor)
     }
 }

@@ -17,6 +17,6 @@ class Dwarf: Character {
     }
     
     override func description() {
-        print("Damages(\(self.weapon.damageValue))")
+        printer.descriptionDwarf(self)
     }
 }

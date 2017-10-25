@@ -9,6 +9,8 @@
 import Foundation
 
 class Global {
+    
+    // MARK: - Readline for Ints with Manager Error Handling
     static func inputInt() -> Int {
         var selectionNumber = 0
         
@@ -16,20 +18,15 @@ class Global {
             if let responseNumber = response.isStringAnInt {
                 selectionNumber = responseNumber
             } else {
-                print("Veuillez entrer un numéro valide")
+                printer.validNumber()
                 selectionNumber = inputInt()
             }
         }
-        
         return selectionNumber
     }
-    
-//    static func inputStr() -> String {
-//        let response = readLine() {
-//        }
-//    }
 }
 
+// MARK: - iS String An Int String Class Extension
 extension String {
     var isStringAnInt: Int? {
         if Int(self) != nil {

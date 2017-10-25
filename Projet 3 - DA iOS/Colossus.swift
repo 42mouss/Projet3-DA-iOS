@@ -17,6 +17,6 @@ class Colossus: Character {
     }
     
     override func description() {
-        print("Damages(\(self.weapon.damageValue))")
+        printer.descriptionColossus(self)
     }
 }

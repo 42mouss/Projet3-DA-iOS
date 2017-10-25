@@ -46,39 +46,39 @@ class Box {
         
         if let randomWeaponType = WeaponType(rawValue: Int(arc4random_uniform(1))) {
             randomWeapon.type = randomWeaponType
-            print("A random Box appears (type: \(randomWeapon.type))\n")
+            printer.boxAppears(randomWeapon.type)
             
             switch randomWeapon.type {
             case .damage:
                 randomWeapon.damageValue = Int(arc4random_uniform(20)) + 30
-                print("damage: \(randomWeapon.damageValue))")
+                printer.randomWeaponDmgValue(randomWeapon)
             case .heal:
                 randomWeapon.healValue = Int(arc4random_uniform(10)) + 20
-                print("heal: \(randomWeapon.healValue))")
+                printer.randomWeaponHealValue(randomWeapon)
             }
             
             if selection.weapon.type == randomWeapon.type {
                 selection.weapon = randomWeapon
-                print("\(selection.name) equips with the new weapon")
+                printer.selectionEquips(selection)
             } else {
-                print("\(selection.name) can't equips with the new weapon")
+                printer.selectionEquipsFails(selection)
             }
         }
     }
     
     // Open the care box and add the life to the character
     private func openCareBox(selection: Character) {
-        let careBoxValue = Int(arc4random_uniform(20)) + 10
+        let healBoxValue = Int(arc4random_uniform(20)) + 10
         
-        print("A Box of armor appears (soin: \(careBoxValue))")
-        selection.receveLife(life: careBoxValue)
+        printer.healBoxAppears(healBoxValue)
+        selection.receveLife(life: healBoxValue)
     }
     
     // Open the armor box and add the armor to the character
     private func openArmorBox(selection: Character) {
         let armorBoxValue = Int(arc4random_uniform(20)) + 10
         
-        print("A Box of armor appears (armure: \(armorBoxValue))")
+        printer.armorBoxAppears(armorBoxValue)
         selection.receveArmor(armor: armorBoxValue)
     }
     

@@ -8,11 +8,12 @@
 
 import Foundation
 
+let printer = Printer()
 // MARK: - Game Class Definition
 class Game {
     
     // MARK: - Helper for prints
-    let printer = Printer()
+    
     static let instance = Game()
     
     // MARK: - Method to launch the global game

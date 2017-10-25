@@ -17,6 +17,6 @@ class Fighter: Character {
     }
     
     override func description() {
-        print("Fighter with Damages(\(self.weapon.damageValue)) lifepoints: \(lifePoints)")
+        printer.descriptionFighter(self)
     }
 }

@@ -68,11 +68,139 @@ class Printer {
         }
     }
     
+    // MARK: - Error Occurs Print
     public func anErrorOccursWithPlayers() {
         print("An error occured with setting players")
     }
     
+    // MARK: - Winner Print
     public func displayWinner(winner: Player) {
         print("\(winner.name) wons the game with \(Statics.numberOfTurns) turns")
+    }
+    
+    // MARK: - Select Character Print
+    public func selectCharacterInYourTeam(_ player: Player) {
+        print("\(player.name) turns, select a character in your Team\n")
+    }
+    
+    // MARK: - You Selected Print
+    public func youSelected() {
+        print("\nYou have selected")
+    }
+    
+    // MARK: - Nothing Print
+    public func noth() {
+        print("")
+    }
+    
+    // MARK: - Ally To Heal Print
+    public func allyToHeal() {
+        print("Please select an ally to heal")
+    }
+    
+    // MARK: - Select Enemy Print
+    public func selectEnemy() {
+        print("Please select an enemy character to attack")
+    }
+    
+    // MARK: - Back Slash Print
+    public func backSlash() {
+        print("\n")
+    }
+    
+    // MARK: - Charac Is Dead Print
+    public func characIsDead(player: Player, _ i: Int) {
+        print("\(player.characters[i].name) is dead..")
+    }
+    
+    // MARK: - Print i Print
+    public func printI(_ i: Int){
+        print("\(i + 1) - ", terminator: "")
+    }
+    
+    // MARK: - Description character
+    public func description(_ character: Character) {
+        print("\(character.name): lifePoints(\(character.lifePoints))")
+        print("Damages(\(character.weapon))")
+    }
+    
+    // MARK: - doAction Print
+    public func doAction(_ character: Character) {
+        print("\(character.name) attacks \(character.name)")
+    }
+    
+    // MARK: - Lost LP Print
+    public func lostLifePoints(_ character: Character, _ oldLife: Int) {
+        print("\(character.name) lost \(oldLife - character.lifePoints) life points")
+    }
+    
+    // MARK: - Lost Armor Print
+    public func lostArmorPoint(_ character: Character, _ oldArmor: Int) {
+        print("\(character.name) lost \(oldArmor - character.armor) armor points")
+    }
+    
+    // MARK: - Won LP Print
+    public func wonLifePoint(_ character: Character, _ oldLife: Int) {
+        print("\(character.name) wons \(character.lifePoints - oldLife) life points")
+    }
+    
+    // MARK: - Won Armor Print
+    public func wonArmorPoint(_ character: Character, _ oldArmor: Int) {
+        print("\(character.name) wons \(character.armor - oldArmor) armor points")
+    }
+    
+    // MARK: - Description Figher Print
+    public func descriptionFighter(_ character: Character) {
+        print("Fighter with Damages(\(character.weapon.damageValue))")
+    }
+    
+    // MARK: - Description Mage Print
+    public func descriptionMage(_ character: Character) {
+        print("Mage with Heal(\(character.weapon.healValue))")
+    }
+    
+    // MARK: - Description Colossus Print
+    public func descriptionColossus(_ character: Character) {
+        print("Damages(\(character.weapon.damageValue))")
+    }
+    
+    // MARK: - Description Dwarf Print
+    public func descriptionDwarf(_ character: Character) {
+        print("Damages(\(character.weapon.damageValue))")
+    }
+    
+    // MARK: - Box appears Print
+    public func boxAppears(_ randomWeaponType: WeaponType) {
+        print("A random Box appears (type: \(randomWeaponType))\n")
+    }
+    
+    // MARK: - Rdm Weapon Dmg Value Print
+    public func randomWeaponDmgValue(_ randomWeapon: Weapon) {
+        print("damage: \(randomWeapon.damageValue))")
+    }
+ 
+    // MARK: - random Weapon Heal Value Print
+    public func randomWeaponHealValue(_ randomWeapon: Weapon) {
+        print("heal: \(randomWeapon.healValue))")
+    }
+    
+    // MARK: - Selection Equips Print
+    public func selectionEquips(_ selection: Character) {
+        print("\(selection.name) equips with the new weapon")
+    }
+    
+    // MARK: - Selection Equips Fails Prints
+    public func selectionEquipsFails(_ selection: Character) {
+        print("\(selection.name) can't equips with the new weapon")
+    }
+    
+    // MARK: - Heal Box Appears Print
+    public func healBoxAppears(_ healBoxValue: Int) {
+        print("A Box of heal appears (heal: \(healBoxValue))")
+    }
+    
+    // MARK: - Armor Box Appears Print
+    public func armorBoxAppears(_ armorBoxValue: Int) {
+       print("A Box of armor appears (armure: \(armorBoxValue))")
     }
 }
