@@ -13,6 +13,10 @@ class Dwarf: Character {
     
     // MARK: - Init Dwarf stats
     init() {
-        super.init(name: "Dwarf", nammed: "", lifePoints: 70, weapon: Weapon(type: .damage, damage: 50, heal: 0))
+        super.init(name: "Dwarf", lifePoints: 70, weapon: Weapon(type: .damage, damage: 50, heal: 0))
+    }
+    
+    override func description() {
+        print("Damages(\(self.weapon.damageValue))")
     }
 }

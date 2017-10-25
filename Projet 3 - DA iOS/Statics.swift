@@ -12,8 +12,13 @@ import Foundation
 class Statics {
     // MARK: - Number of players, of character per players, of turns
     static var existingNamesPlayers = [String]()
-    static var existingNamesCharacter = [String]()
     static var numberOfCharacterPerPlayer = 3
+    //static var numberOfCharacterPerPlayerEnum = 0 ..< 3
+    static var numberOfCharacterPerPlayerRange: CountableRange<Int> {
+        get {
+            return 0 ..< numberOfCharacterPerPlayer
+        }
+    }
     static var numberOfPlayers = 0 ..< 2
     static var players = [Player?](repeating: nil, count: 2)
     static let characters = 3

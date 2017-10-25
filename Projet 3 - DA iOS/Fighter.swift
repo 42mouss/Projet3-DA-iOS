@@ -13,7 +13,10 @@ class Fighter: Character {
 
     // MARK: - Init Fighter stats
     init() {
-        super.init(name: "Fighter", nammed: "", lifePoints: 100, weapon: Weapon(type: .damage, damage: 10, heal: 0))
-  
+        super.init(name: "Fighter", lifePoints: 100, weapon: Weapon(type: .damage, damage: 50, heal: 0))
+    }
+    
+    override func description() {
+        print("Fighter with Damages(\(self.weapon.damageValue)) lifepoints: \(lifePoints)")
     }
 }

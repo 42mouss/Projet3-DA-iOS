@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B66FF081F97CF220001EC54 /* GlobalReadline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B66FF071F97CF220001EC54 /* GlobalReadline.swift */; };
+		7B66FF0A1F991FD30001EC54 /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B66FF091F991FD30001EC54 /* Box.swift */; };
 		B5843EAB1F7A856900C2C910 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5843EAA1F7A856900C2C910 /* main.swift */; };
 		B5843EB21F7A85AB00C2C910 /* Fighter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5843EB11F7A85AB00C2C910 /* Fighter.swift */; };
 		B5843EB41F7A85C200C2C910 /* Mage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5843EB31F7A85C200C2C910 /* Mage.swift */; };
@@ -33,6 +35,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		7B66FF071F97CF220001EC54 /* GlobalReadline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalReadline.swift; sourceTree = "<group>"; };
+		7B66FF091F991FD30001EC54 /* Box.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
 		B5843EA71F7A856900C2C910 /* Projet 3 - DA iOS */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Projet 3 - DA iOS"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5843EAA1F7A856900C2C910 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		B5843EB11F7A85AB00C2C910 /* Fighter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fighter.swift; sourceTree = "<group>"; };
@@ -82,8 +86,10 @@
 				B5843EC41F7AE9D000C2C910 /* Player.swift */,
 				B5843EC61F7AF1BC00C2C910 /* Statics.swift */,
 				B5843ECA1F7D824E00C2C910 /* GlobalPrinter.swift */,
+				7B66FF071F97CF220001EC54 /* GlobalReadline.swift */,
 				B5843EBB1F7A86F400C2C910 /* Characters */,
 				B5843EC01F7A9D9400C2C910 /* Weapon.swift */,
+				7B66FF091F991FD30001EC54 /* Box.swift */,
 			);
 			path = "Projet 3 - DA iOS";
 			sourceTree = "<group>";
@@ -165,8 +171,10 @@
 				B5843EB81F7A85DE00C2C910 /* Dwarf.swift in Sources */,
 				B5843EC11F7A9D9400C2C910 /* Weapon.swift in Sources */,
 				B5843EBA1F7A86EA00C2C910 /* Character.swift in Sources */,
+				7B66FF0A1F991FD30001EC54 /* Box.swift in Sources */,
 				B5843EAB1F7A856900C2C910 /* main.swift in Sources */,
 				B5843EB21F7A85AB00C2C910 /* Fighter.swift in Sources */,
+				7B66FF081F97CF220001EC54 /* GlobalReadline.swift in Sources */,
 				B5843EC71F7AF1BC00C2C910 /* Statics.swift in Sources */,
 				B5843EC51F7AE9D000C2C910 /* Player.swift in Sources */,
 				B5843EC31F7AE50400C2C910 /* Game.swift in Sources */,
@@ -303,6 +311,7 @@
 				B5843EB01F7A856900C2C910 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -13,6 +13,10 @@ class Mage: Character {
     
     // MARK: - Init Mage stats
     init() {
-        super.init(name: "Fighter", nammed: "", lifePoints: 100, weapon: Weapon(type: .heal, damage: 0, heal: 40))
-        }
+        super.init(name: "Mage", lifePoints: 100, weapon: Weapon(type: .heal, damage: 0, heal: 40))
+    }
+    
+    override func description() {
+        print("Mage with Heal(\(self.weapon.healValue))")
+    }
 }

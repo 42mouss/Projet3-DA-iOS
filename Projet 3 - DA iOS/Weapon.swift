@@ -9,7 +9,7 @@
 import Foundation
 
 // MARK: - Enum Weapon Types
-enum WeaponType {
+enum WeaponType: Int {
     case damage
     case heal
 }
@@ -18,12 +18,12 @@ enum WeaponType {
 class Weapon {
 
     // Mark: - Damage, Heal, WeaponType Definition
-    var damage, heal: Int?
-    var type: WeaponType?
+    var damageValue, healValue: Int
+    var type: WeaponType
     
-    init(type: WeaponType, damage: Int, heal: Int) {
+    init(type: WeaponType = .damage, damage: Int = 0, heal: Int = 0) {
         self.type = type
-        self.damage = damage
-        self.heal = heal
+        self.damageValue = damage
+        self.healValue = heal
     }
 }

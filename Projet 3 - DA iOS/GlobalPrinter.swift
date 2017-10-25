@@ -30,11 +30,11 @@ class Printer {
     }
     
     // MARK: - Adding Character to a team print
-    public func addingCharacter(player: Player) {
+    public func addingCharacter(_ player: Player) {
         print("\n\(player.name) is choosing his \(player.characters.count + 1) character")
         print("1 - Fighter: Life(100) Damage(10)")
         print("2 - Mage: Life(70) Heal(40)")
-        print("3 - Colossus: Life(300) Damage(5)")
+        print("3 - Colossus: Life(200) Damage(5)")
         print("4 - Dwarf: Life(70) Damage(50)", terminator: "\n")
     }
     
@@ -56,12 +56,23 @@ class Printer {
     
     // MARK: - You've selected print
     public func youHaveSelected(player: Player, index: Int) {
-        print("\nYou've selected a \(player.characters[index].name) nammed \(player.characters[index].nammed)")
+        print("\nYou've selected a \(player.characters[index].name)")
     }
     
-    
     // MARK: - Fight Presentation print
-    public func fightPresentation(name: String) {
+    public func fightPresentation(name: String, characters: [Character]) {
         print("\nOK \(name), lets fight, select a champion")
+        print("Select one of \(name)s charaacter by his number")
+        for i in Statics.numberOfCharacterPerPlayerRange {
+            print("\(i) - \(characters[i])")
+        }
+    }
+    
+    public func anErrorOccursWithPlayers() {
+        print("An error occured with setting players")
+    }
+    
+    public func displayWinner(winner: Player) {
+        print("\(winner.name) wons the game with \(Statics.numberOfTurns) turns")
     }
 }

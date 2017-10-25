@@ -13,6 +13,10 @@ class Colossus: Character {
     
     // MARK: - Init Colossus stats
     init() {
-        super.init(name: "Colossus", nammed: "", lifePoints: 200, weapon: Weapon(type: .damage, damage: 5, heal: 0))
+        super.init(name: "Colossus", lifePoints: 200, weapon: Weapon(type: .damage, damage: 5, heal: 0))
+    }
+    
+    override func description() {
+        print("Damages(\(self.weapon.damageValue))")
     }
 }
