@@ -55,7 +55,7 @@ class Character {
         }
     }
     
-    // Update the life value when the character receve life from box
+    // MARK: - Update the life value when the character receve life from box
     public func receveLife(life: Int) {
         let oldLife = self.lifePoints
         
@@ -63,7 +63,7 @@ class Character {
         printer.wonLifePoint(self, oldLife)
     }
     
-    // Update the armor value when the character receve armor from box
+    // MARK: - Update the armor value when the character receve armor from box
     public func receveArmor(armor: Int) {
         let oldArmor = self.armor
         

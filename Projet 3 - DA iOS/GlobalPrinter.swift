@@ -171,17 +171,17 @@ class Printer {
     
     // MARK: - Box appears Print
     public func boxAppears(_ randomWeaponType: WeaponType) {
-        print("A random Box appears (type: \(randomWeaponType))\n")
+        print("A random Box appears (type: \(randomWeaponType)\n")
     }
     
     // MARK: - Rdm Weapon Dmg Value Print
     public func randomWeaponDmgValue(_ randomWeapon: Weapon) {
-        print("damage: \(randomWeapon.damageValue))")
+        print("damage: \(randomWeapon.damageValue)")
     }
  
     // MARK: - random Weapon Heal Value Print
     public func randomWeaponHealValue(_ randomWeapon: Weapon) {
-        print("heal: \(randomWeapon.healValue))")
+        print("heal: \(randomWeapon.healValue)")
     }
     
     // MARK: - Selection Equips Print
